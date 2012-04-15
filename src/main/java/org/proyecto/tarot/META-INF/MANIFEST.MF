@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: Tarot
+Name: Tarot.class, Tarot$1.class, Tarot$2.class
+Java-Bean: True
