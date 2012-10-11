@@ -1,10 +1,7 @@
 [JTarot]
 
-Descripci�n:
+Descripcion:
 
-B�sicamente es un programa para ver tu carta del tarot de acuerdo al d�a y a�o de tu nacimiento, as� como el a�o nuevo que inicia.
-
-
-Este es mi primer proyecto en github.com. Por ahora solo es una idea.
+Se trata de una aplicacion sencilla que calcula la carta de tarot.
 
 
