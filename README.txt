@@ -10,6 +10,6 @@ Compilar:
 javac -g JTarot.java
 
 Ejecutar:
-java Tarot
+java JTarot
 
 
