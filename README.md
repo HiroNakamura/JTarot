@@ -1,4 +1,4 @@
-[JTarot]
+## JTarot
 
 Descripción:
 Se trata de una aplicación sencilla que calcula la carta de tarot.
