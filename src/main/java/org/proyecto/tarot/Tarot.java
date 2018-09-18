@@ -1,4 +1,9 @@
-//package org.proyecto.tarot;
+/**
+*@author Fer Carraro
+*/
+
+package org.proyecto.tarot;
+
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.JLabel;
@@ -20,13 +25,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.awt.Color;
 
-
-
-/*
-@author yo
-*/
-
-
 public class Tarot extends JFrame{
 private JTextField txtNombre,txtDiaNac,txtMes,txtAnyoNuevo;
 private JTextArea textArea;
@@ -46,17 +44,17 @@ private JScrollPane scroller;
 	 txtNombre=new JTextField(6);
 	 txtNombre.setToolTipText("tu nombre");
 	 panel.add(txtNombre);
-	 panel.add(new JLabel("<html><font color='blue'><b>Día de nacimiento:</b></font></html>"));
+	 panel.add(new JLabel("<html><font color='blue'><b>DÃ­a de nacimiento:</b></font></html>"));
 	 txtDiaNac=new JTextField(6);
-	 txtDiaNac.setToolTipText("el día que naciste");
+	 txtDiaNac.setToolTipText("el dÃ­a que naciste");
 	 panel.add(txtDiaNac);
 	 panel.add(new JLabel("<html><font color='blue'><b>Mes de nacimiento:</b></font></html>"));
 	 txtMes=new JTextField(6);
 	 txtMes.setToolTipText("el mes");
 	 panel.add(txtMes);
-	 panel.add(new JLabel("<html><font color='blue'><b>Año nuevo que inicia:</b></font></html>"));
+	 panel.add(new JLabel("<html><font color='blue'><b>AÃ±o nuevo que inicia:</b></font></html>"));
 	 txtAnyoNuevo=new JTextField(6);
-	 txtAnyoNuevo.setToolTipText("el año nuevo");
+	 txtAnyoNuevo.setToolTipText("el aÃ±o nuevo");
 	 panel.add(txtAnyoNuevo);
 	 
 	 JButton calcular=new JButton("<html><font color='white'><b>Calcular</b></font></html>");
@@ -245,7 +243,7 @@ static String tuCarta(int s){
    
   break;
   case 9:
-    horos="El Ermitaño";
+    horos="El ErmitaÃ±o";
    
   break;
   case 10:
