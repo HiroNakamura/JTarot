@@ -1,15 +1,15 @@
 ## JTarot
 
 Descripción:
-Se trata de una aplicación sencilla que calcula la carta de tarot.
+* Se trata de una aplicación sencilla que calcula la carta de tarot.
 
-¿Qué necesitas para hacerlo funcionar?
-Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
+* ¿Qué necesitas para hacerlo funcionar?
+   Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
 
-Compilar:
+* Compilar:
 javac -g JTarot.java
 
-Ejecutar:
+* Ejecutar:
 java JTarot
 
 
