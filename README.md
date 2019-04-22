@@ -6,12 +6,16 @@ Descripción:
 * ¿Qué necesitas para hacerlo funcionar?
    Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
 
-* Compilar:
-
+**Compilar:**
+``
 gradle build
+``
 
-* Ejecutar:
+**Ejecutar:**
 
+``
 gradle bootRun
+
+``
 
 
