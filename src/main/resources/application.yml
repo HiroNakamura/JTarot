@@ -1,0 +1,8 @@
+#BANNER
+banner:
+  charset: UTF-8
+  location: banner.txt
+
+#SERVIDOR
+server:
+  port : 8090
