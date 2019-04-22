@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="x-ua-compatible" content="ie-edge"/>  
+        <title>Bienvenido a JTarot</title>
+       <th:block th:include="layout/header"></th:block> 
+    </head>
+    <body>
+        <div>
+            <form method="GET" th:action="@{/jtarot/calcularTarot}" action="/jtarot/calcularTarot">
+                Tu nombre: <input type="text" name="nombre" value="" placeholder="nombre"/>
+                Día de nacimiento: <input id="date" type="date" name="fecha" value="2019-04-21"/>
+                <input type="submit" value="Calcular carta de tarot"/>
+            </form>
+        </div>
+        <div th:include="layout/footer"></div>
+    </body>
+</html>
