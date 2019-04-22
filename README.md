@@ -7,9 +7,9 @@ Descripción:
    Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
 
 * Compilar:
-javac -g JTarot.java
+gradle build
 
 * Ejecutar:
-java JTarot
+gradle bootRun
 
 
