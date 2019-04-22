@@ -7,9 +7,11 @@ Descripción:
    Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
 
 * Compilar:
+
 gradle build
 
 * Ejecutar:
+
 gradle bootRun
 
 
