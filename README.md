@@ -12,10 +12,8 @@ gradle build
 ``
 
 **Ejecutar:**
-
 ``
 gradle bootRun
-
 ``
 
 
