@@ -1,5 +1,7 @@
 ## JTarot
 
+![alt text]https://github.com/HiroNakamura/JTarot/blob/master/src/main/resources/static/img/JTarot.png "JTarot")
+
 Descripción:
 * Se trata de una aplicación sencilla que calcula la carta de tarot.
 
