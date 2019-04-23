@@ -10,7 +10,8 @@
     <body>
         <div>
             <span th:text="${datos}"></span><br/>
-            <img th:src="@{${carta}}"/>
+            <img th:src="@{${carta}}"/><br/>
+            <span th:text="${descripcion}"></span>
         </div>
        <div th:include="layout/footer"></div>
     </body>
