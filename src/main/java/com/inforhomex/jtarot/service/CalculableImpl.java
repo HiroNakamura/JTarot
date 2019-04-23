@@ -10,6 +10,45 @@ import org.springframework.stereotype.Service;
 @Service("calculable")
 public class CalculableImpl implements Calculable{
 
+
+	@Override
+	public String getDescripcion(String nombre, String fecha){
+		String[] datos = fecha.split("-");
+		int a = Integer.parseInt(datos[0]);
+		int b = Integer.parseInt(datos[1]);
+		int c = Integer.parseInt(datos[2]);
+		// 1981 + 12 + 18 = 2011
+		int suma = a + b + c;
+		String miCarta = getCarta(separar(String.valueOf(suma)));
+		String descripcion ="";
+		switch(miCarta){
+			case "EL MAGO": descripcion += nombre+ ", tus capacidades comunicativas y para resolver problemas se verán realizadas.";break;
+			case "LA PAPISA": descripcion += nombre+", comienza una época de independencia que te dará una nueva identidad.";break;
+			case "LA EMPERATRIZ": descripcion += nombre+", tiempo de sanar y evaluar cosas importantes.";break;
+			case "EL EMPERADOR": descripcion = nombre+", es un buen año para realizar cambios y tomar el liderazgo.";break;
+			case "EL PAPA": descripcion += nombre+", un buen año para desarrollarse.";break;
+			case "EL ENAMORADO": descripcion += nombre+", tiempo para renovar pareja o separarse de ella.";break;
+			case "EL CARRO": descripcion += nombre+", época de cambios, de mudanzas. Mucha actividad.";break;
+			case "LA JUSTICIA": descripcion += nombre+", tiempo para equilibar el trabajo y el descanso.";break;
+			case "EL ERMITAÑO": descripcion += nombre+", atiende a tus voces interiores y termina lo inconcluso.";break;
+			case "LA RUEDA": descripcion += nombre+", las puertas pequeñas siempre se abren que las grandes.";break;
+			case "LA FUERZA": descripcion += nombre+", tiempo pra las artes y la creatividad.";break;
+			case "EL COLGADO": descripcion += nombre+", deberás renunciar a todos los objetivos que no se han originado de tu ser.";break;
+			case "LA MUERTE": descripcion += nombre+", alguien se irá. Vendrán grandes cambios.";break;
+			case "LA TEMPLANZA": descripcion += nombre+", la belleza llenará tu vida y sentirás la presencia de seres de luz.";break;
+			case "EL DIABLO": descripcion += nombre+", deberás reírte de ti mismo, de tus problemas, pensar con humor.";break;
+			case "LA TORRE": descripcion += nombre+", tiempo para ponerse a prueba, grandes transformaciones en tu vida.";break;
+			case "LA ESTRELLA": descripcion += nombre+", mejorará tu autoestima. Lograás el éxito y tus objetivos.";break;
+			case "LA LUNA": descripcion += nombre+", tiempo de alcanzar independencia y sabiduría.";break;
+			case "EL SOL": descripcion += nombre+", oportunidades en todos loa ámbitos. Un buen año.";break;
+			case "EL JUICIO": descripcion += nombre+", los pendientes te pueden alanzar. Deberás razonar a cerca de tu vida.";break;
+			case "EL MUNDO": descripcion += nombre+", tiempo pra viajar y conocer el mundo.";break;
+			case "EL LOCO": descripcion += nombre+", abrete a la amabilidad, trata de olvidad el caos del mundo.";break;
+			default: break;
+		}
+		return descripcion;
+	}
+
 	@Override
 	public String getTarot(String nombre, String fecha){
 		String[] datos = fecha.split("-");
@@ -38,10 +77,10 @@ public class CalculableImpl implements Calculable{
 		int suma = a + b + c;
 
 		result += "";
-		result += "No. de nacimiento: "+ separar(String.valueOf(suma))+" | ";
+		result += "Tu número es: "+ separar(String.valueOf(suma))+" | ";
 
 		String miCarta = getCarta(separar(String.valueOf(suma)));
-		result += "Tu carta del Tarot de nacimiento es: "+miCarta;
+		result += "Tu carta del Tarot es: "+miCarta;
 
 
 		return result;
