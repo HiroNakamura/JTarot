@@ -32,8 +32,10 @@ public class ControllerPrincipal{
     public String getTuCarta(@RequestParam("nombre") String nombre, @RequestParam("fecha") String fecha, Model model){
     	String datos = calculable.getCalculo(nombre,fecha);
     	String carta = calculable.getTarot(nombre,fecha);
+        String descripcion = calculable.getDescripcion(nombre,fecha);
     	model.addAttribute("datos",datos);
     	model.addAttribute("carta",carta);
+        model.addAttribute("descripcion",descripcion);
         return "carta";
     }
 
