@@ -8,10 +8,22 @@
        <th:block th:include="layout/header"></th:block>
     </head>
     <body>
-        <div>
-            <span id="datos" th:text="${datos}"></span><br/>
-            <img th:src="@{${carta}}"/><br/>
-            <span id="descripcion" th:text="${descripcion}"></span>
+        <div id="principal">
+
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">Hecho</span>
+                              <span id="datos" th:text="${datos}"></span><br/>
+                              <span id="descripcion" th:text="${descripcion}"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div style="position: relative; top: 7px; left: 500px;">
+                <img th:src="@{${carta}}"/>
+            </div><br/>
             <script th:src="@{../js/funciones.js}"></script>
         </div>
        <div th:include="layout/footer"></div>
