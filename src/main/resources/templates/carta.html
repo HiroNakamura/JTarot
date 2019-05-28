@@ -9,9 +9,10 @@
     </head>
     <body>
         <div>
-            <span th:text="${datos}"></span><br/>
+            <span id="datos" th:text="${datos}"></span><br/>
             <img th:src="@{${carta}}"/><br/>
-            <span th:text="${descripcion}"></span>
+            <span id="descripcion" th:text="${descripcion}"></span>
+            <script th:src="@{../js/funciones.js}"></script>
         </div>
        <div th:include="layout/footer"></div>
     </body>
