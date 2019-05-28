@@ -6,6 +6,11 @@
         <meta http-equiv="x-ua-compatible" content="ie-edge"/>  
         <title>Bienvenido a JTarot</title>
        <th:block th:include="layout/header"></th:block>
+      <style>
+      body {
+          overflow:hidden;
+        }
+      </style>
     </head>
     <body>
         <div id="principal">
@@ -21,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-            <div style="position: relative; top: 7px; left: 500px;">
+            <div style="position: relative; top: -190px; left: 671px;">
                 <img th:src="@{${carta}}"/>
             </div><br/>
             <script th:src="@{../js/funciones.js}"></script>
