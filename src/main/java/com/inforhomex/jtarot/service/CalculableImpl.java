@@ -38,9 +38,9 @@ public class CalculableImpl implements Calculable{
 			case "LA TEMPLANZA": descripcion += nombre+", la belleza llenará tu vida y sentirás la presencia de seres de luz.";break;
 			case "EL DIABLO": descripcion += nombre+", deberás reírte de ti mismo, de tus problemas, pensar con humor.";break;
 			case "LA TORRE": descripcion += nombre+", tiempo para ponerse a prueba, grandes transformaciones en tu vida.";break;
-			case "LA ESTRELLA": descripcion += nombre+", mejorará tu autoestima. Lograás el éxito y tus objetivos.";break;
+			case "LA ESTRELLA": descripcion += nombre+", mejorará tu autoestima. Lograrás el éxito y tus objetivos.";break;
 			case "LA LUNA": descripcion += nombre+", tiempo de alcanzar independencia y sabiduría.";break;
-			case "EL SOL": descripcion += nombre+", oportunidades en todos loa ámbitos. Un buen año.";break;
+			case "EL SOL": descripcion += nombre+", oportunidades en todos los ámbitos. Un buen año.";break;
 			case "EL JUICIO": descripcion += nombre+", los pendientes te pueden alanzar. Deberás razonar a cerca de tu vida.";break;
 			case "EL MUNDO": descripcion += nombre+", tiempo pra viajar y conocer el mundo.";break;
 			case "EL LOCO": descripcion += nombre+", abrete a la amabilidad, trata de olvidad el caos del mundo.";break;
@@ -50,7 +50,7 @@ public class CalculableImpl implements Calculable{
 	}
 
 	@Override
-	public String getTarot(String nombre, String fecha){
+	public String getTarot(String fecha){
 		String[] datos = fecha.split("-");
 		int a = Integer.parseInt(datos[0]);
 		int b = Integer.parseInt(datos[1]);
