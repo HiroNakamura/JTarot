@@ -43,7 +43,7 @@ public class CalculableImpl implements Calculable{
 			case "EL SOL": descripcion += nombre+", oportunidades en todos los ámbitos. Un buen año.";break;
 			case "EL JUICIO": descripcion += nombre+", los pendientes te pueden alanzar. Deberás razonar a cerca de tu vida.";break;
 			case "EL MUNDO": descripcion += nombre+", tiempo pra viajar y conocer el mundo.";break;
-			case "EL LOCO": descripcion += nombre+", abrete a la amabilidad, trata de olvidad el caos del mundo.";break;
+			case "EL LOCO": descripcion += nombre+", abrete a la amabilidad, trata de olvidar el caos del mundo.";break;
 			default: break;
 		}
 		return descripcion;
