@@ -25,14 +25,46 @@
                         </div>
                     </div>
                 </div>
-            <div style="position: relative; top: -190px; left: 671px;">
+            <div style="position: relative; top: -190px; left: 671px;" id="tercero">
                 <img th:src="@{${carta}}"/>
             </div><br/>
+
+            <div id="descarga" style="position: relative;top:-200px;left: 655px;">
+                    <label id="ver">Descargar imagen</label>
+                    <button id="previo">Ver imagen</button>
+                    <a id="descargar">Aquí</a>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+                    <script>
+                       $(document).ready(function(){
+                        var element = $("#principal");
+                        var getCanvas; 
+                        $("#previo").on('click', function () {
+                            html2canvas(element, {
+                                onrendered: function (canvas) {
+                                    $("#ver").append(canvas);
+                                    getCanvas = canvas;
+                                }
+                            });
+                        });
+                        
+                        $("#descargar").on('click', function () {
+                            var imgageData = getCanvas.toDataURL("image/png");
+                            var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+                            $("#descargar").attr("download", "Tarot.png").attr("href", newData);
+                        });
+                           
+                       });
+                    </script>
+                </div>
+
+
+
             <script th:src="@{../js/funciones.js}"></script>
             <script>
             setTimeout(function () {
                 window.location.href = "/jtarot/index";
-            }, 6000); 
+            }, 60000); 
             </script>
         </div>
        <div th:include="layout/footer"></div>
