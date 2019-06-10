@@ -29,6 +29,25 @@
                     </div>
                 </div>
             </form>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" th:src="@{https://code.jquery.com/jquery-3.4.1.min.js}" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script>
+            $(document).ready(function(){
+                console.log('%c jQuery funcionando','background-color:black;color:red;');
+
+                $("#nombre").on({
+                    keypress: function () {
+                        $("#nombre").val($("#nombre").val().toUpperCase());
+                    },
+                    keydown: function () {
+                        $("#nombre").val($("#nombre").val().toUpperCase());
+                    },
+                    keyup: function () {
+                        $("#nombre").val($("#nombre").val().toUpperCase());
+                    }
+                });
+
+            });
+            </script>
         </div>
         <div th:include="layout/footer"></div>
     </body>
