@@ -1,8 +1,9 @@
 package com.inforhomex.jtarot.service;
 
 
-import java.util.List;
-import java.util.ArrayList;
+//import java.util.List;
+//import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.HashMap;
 import org.springframework.stereotype.Service;
 
@@ -80,7 +81,17 @@ public class CalculableImpl implements Calculable{
 		result += "Tu número es: "+ separar(String.valueOf(suma))+" | ";
 
 		String miCarta = getCarta(separar(String.valueOf(suma)));
+
+		LocalDate localDate = LocalDate.now();
+		int anyoEmpieza = localDate.getYear();
+		int otraSuma = anyoEmpieza + b +c;
+
+
 		result += "Tu carta del Tarot es: "+miCarta;
+
+		result += ". Tu número de este año ["+anyoEmpieza+"] es: "+separar(String.valueOf(otraSuma));
+		String miOtraCarta = getCarta(separar(String.valueOf(otraSuma)));
+		result += ". Tu carta del Tarot "+anyoEmpieza+" es "+miOtraCarta;
 
 
 		return result;
