@@ -1,4 +1,4 @@
-## JTarot
+# JTarot
 
 
 ![Image of JTarot](https://github.com/HiroNakamura/JTarot/blob/master/src/main/resources/static/img/JTarot.png)
@@ -8,6 +8,14 @@ Descripción:
 
 * ¿Qué necesitas para hacerlo funcionar?
    Puedes usar la terminal de comandos, no es necesario usar algún IDE en especial.
+   
+   
+   
+   ### El Emperador 
+   ![Emperador](https://github.com/HiroNakamura/JTarot/blob/master/src/main/resources/static/img/EL%20EMPERADOR.jpg)
+   
+
+
 
 **Compilar:**
 ``
