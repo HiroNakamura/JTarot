@@ -33,9 +33,11 @@ public class ControllerPrincipal{
     	String datos = calculable.getCalculo(nombre,fecha);
     	String carta = calculable.getTarot(fecha);
         String descripcion = calculable.getDescripcion(nombre,fecha);
+        String miNumero = calculable.getNumeroNombre(nombre);
     	model.addAttribute("datos",datos);
     	model.addAttribute("carta",carta);
         model.addAttribute("descripcion",descripcion);
+        model.addAttribute("miNumero",miNumero);
         return "carta";
     }
 
