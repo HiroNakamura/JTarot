@@ -10,11 +10,45 @@ import org.springframework.stereotype.Service;
 
 @Service("calculable")
 public class CalculableImpl implements Calculable{
-	
+
+
 	@Override
 	public String getNumeroNombre(String nombre){
-	   return null;
+		String resultadoFinal = "";
+		int suma = 0;
+		for(int i=0 ; i < nombre.length(); i++){
+			if(nombre.charAt(i) != ' ' ){
+				char c = nombre.charAt(i);
+				int n = (int) getMapaLester().get(String.valueOf(c));
+				suma += n;
+			}
+		}
+		
+		int tam = String.valueOf(suma).length();
+		int sumaTmp = 0;
+
+		resultadoFinal += "Tu número onomástico es: ";
+	
+		if(tam >= 2){
+			switch(suma){
+				case 11: resultadoFinal += "El número maestro 11"; break;
+				case 22: resultadoFinal += "El número maestro 22"; break;
+				case 33: resultadoFinal += "El número maestro 33"; break;
+				default:
+				String strSuma = String.valueOf(suma);
+				for(int j=0; j < strSuma.length(); j++){
+					char cx = strSuma.charAt(j);
+					int nx = Integer.parseInt(String.valueOf(cx));
+					sumaTmp += nx;
+				}
+				resultadoFinal += " "+sumaTmp;
+				break;
+			}
+		}
+
+		return resultadoFinal;
 	}
+
 
 	@Override
 	public String getDescripcion(String nombre, String fecha){
@@ -150,6 +184,47 @@ public class CalculableImpl implements Calculable{
 			suma = s;
 		}
 		return suma;
+	}
+
+	public static HashMap<String,Integer> getMapaLester(){
+		HashMap<String,Integer> mapa = new HashMap<>();
+		mapa.put("A",1);
+		mapa.put("J",1);
+        mapa.put("S",1);
+
+        mapa.put("B",2);
+        mapa.put("K",2);
+        mapa.put("T",2);
+
+        mapa.put("C",3);
+        mapa.put("L",3);
+        mapa.put("U",3);
+
+        mapa.put("D",4);
+        mapa.put("M",4);
+        mapa.put("V",4);
+
+        mapa.put("E",5);
+        mapa.put("N",5);
+        mapa.put("W",5);
+
+        mapa.put("F",6);
+        mapa.put("O",6);
+        mapa.put("X",6);
+
+        mapa.put("G",7);
+        mapa.put("P",7);
+        mapa.put("Y",7);
+
+        mapa.put("H",8);
+        mapa.put("Q",8);
+        mapa.put("Z",8);
+
+        mapa.put("I",9);
+        mapa.put("R",9);
+        mapa.put("Ñ",9);
+
+		return mapa;
 	}
 
 }
