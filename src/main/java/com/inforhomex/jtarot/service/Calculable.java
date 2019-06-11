@@ -4,4 +4,5 @@ public interface Calculable{
 	String getCalculo(String nombre, String fecha);
 	String getTarot(String fecha);
 	String getDescripcion(String nombre, String fecha);
+	String getNumeroNombre(String nombre);
 }
