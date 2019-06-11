@@ -10,7 +10,11 @@ import org.springframework.stereotype.Service;
 
 @Service("calculable")
 public class CalculableImpl implements Calculable{
-
+	
+	@Override
+	public String getNumeroNombre(String nombre){
+	   return null;
+	}
 
 	@Override
 	public String getDescripcion(String nombre, String fecha){
