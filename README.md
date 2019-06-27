@@ -3,6 +3,8 @@
 
 ![Image of JTarot](https://github.com/HiroNakamura/JTarot/blob/master/src/main/resources/static/img/JTarot.png)
 
+**Nota:** Recordar que todo en el Universo es matemática. Todo lo que nos rodea son números.
+
 Descripción:
 * Se trata de una aplicación sencilla que calcula la carta de tarot.
 
