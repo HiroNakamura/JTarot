@@ -30,3 +30,5 @@ gradle build
 ``
 gradle bootRun
 ``
+
+[Página](https://github.com/HiroNakamura/JTarot/edit/gh-pages/index.md)
