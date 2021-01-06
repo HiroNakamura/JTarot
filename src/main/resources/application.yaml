@@ -6,3 +6,8 @@ banner:
 #SERVIDOR
 server:
   port : 8090
+
+
+spring:
+  datasource: 
+    initialization-mode: always

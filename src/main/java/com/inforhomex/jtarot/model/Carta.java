@@ -1,10 +1,28 @@
 package com.inforhomex.jtarot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
+@Entity(name="Carta")
+@Table(name="carta")
 public class Carta{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private int numero;
     private String nombre;
     private String descripcion;
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
 
     public int getNumero(){
         return numero;

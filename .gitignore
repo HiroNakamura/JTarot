@@ -4,6 +4,7 @@ README.md
 !gradle/wrapper/gradle-wrapper.jar
 bin/
 
+*.log
 
 ### STS ###
 .apt_generated
