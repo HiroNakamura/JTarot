@@ -11,3 +11,12 @@ server:
 spring:
   datasource: 
     initialization-mode: always
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/curso
+    username: postgres
+    password: 5432
+  jpa: 
+    generate-ddl: true
+    show-sql: true
+    hibernate: 
+      ddl-auto: create-drop
