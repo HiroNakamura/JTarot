@@ -14,4 +14,15 @@ public class RestTarotController{
     public String saludo(){
     	return new String("Bienvenido a JTarot!!");
     }
+
+    //http://localhost:8090/jtarotapi/carta
+    @GetMapping("/carta")
+    public com.inforhomex.jtarot.model.Carta crear(){
+    	com.inforhomex.jtarot.model.Carta carta = new com.inforhomex.jtarot.model.Carta();
+    	carta.setId(1);
+    	carta.setNumero(4);
+    	carta.setNombre("EL EMPERADOR");
+    	carta.setDescripcion("La carta del empeador de las barajas del Tarot.");
+    	return carta;
+    }
 }
