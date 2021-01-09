@@ -3,6 +3,9 @@ package com.inforhomex.jtarot.restcontroller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import com.inforhomex.jtarot.model.Carta;
 
 @RequestMapping("jtarotapi")
 @RestController
@@ -15,13 +18,8 @@ public class RestTarotController{
     }
 
     //http://localhost:8090/jtarotapi/carta
-    @GetMapping("/carta")
-    public com.inforhomex.jtarot.model.Carta crear(){
-    	com.inforhomex.jtarot.model.Carta carta = new com.inforhomex.jtarot.model.Carta();
-    	carta.setId(1);
-    	carta.setNumero(4);
-    	carta.setNombre("EL EMPERADOR");
-    	carta.setDescripcion("La carta del empeador de las barajas del Tarot.");
+    @PostMapping("/carta")
+    public Carta crear(@RequestBody Carta carta){
     	return carta;
     }
 }
