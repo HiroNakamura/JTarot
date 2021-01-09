@@ -19,4 +19,9 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate: 
-      ddl-auto: create-drop
+      ddl-auto: create
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
