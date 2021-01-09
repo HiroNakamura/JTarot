@@ -1,6 +1,3 @@
-/*Carta de tarot*/
-CREATE TABLE carta(id serial PRIMARY KEY, numero integer NOT NULL, nombre text, descripcion text);
-
 INSERT INTO carta(numero, nombre, descripcion) VALUES(1,'EL MAGO','');
 INSERT INTO carta(numero, nombre, descripcion) VALUES(2,'LA PAPISA','');
 INSERT INTO carta(numero, nombre, descripcion) VALUES(3,'LA EMPERATRIZ','');
