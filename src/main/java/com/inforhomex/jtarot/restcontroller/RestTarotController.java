@@ -28,7 +28,7 @@ public class RestTarotController{
     //http://localhost:8090/jtarotapi/carta
     @PostMapping("/carta")
     public Carta crear(@RequestBody Carta carta){
-    	return this.cartaService..save(carta);
+    	return this.cartaService.save(carta);
     }
 
     //http://localhost:8090/jtarotapi/cartas
