@@ -7,6 +7,6 @@ import com.inforhomex.jtarot.model.Carta;
 import java.util.List;
 
 public interface CartaRepository extends CrudRepository<Carta, Integer>{
-    @Query(value="SELECT id, numero, numero, descripcion FROM public.carta ",nativeQuery=true)
+    @Query(value="SELECT id, numero, nombre, descripcion FROM public.carta ",nativeQuery=true)
     public List<Carta> getAllCartas();
 }
