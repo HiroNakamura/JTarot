@@ -1,7 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
 	id 'java'
-	id 'application'
+	// id 'application'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -9,7 +9,7 @@ apply plugin: 'io.spring.dependency-management'
 group = 'com.inforhomex'
 version = '0.0.1'
 sourceCompatibility = '1.8'
-mainClassName = "com.inforhomex.jtarot.JtarotApplication"
+// mainClassName = "com.inforhomex.jtarot.JtarotApplication"
 
 
 repositories {
@@ -30,9 +30,11 @@ dependencies {
 	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+/*
 project.configurations.compile.resolvedConfiguration.resolvedArtifacts.each {
  println '   [Dependencias] '
  println 'artifact: '+it.name // << the artifact name
  println 'referencia: '+it.file // << the file reference
  println '**************************'
 }
+*/
